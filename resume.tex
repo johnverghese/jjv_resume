@@ -1,0 +1,203 @@
+TeX source of my resume
+% =========================
+%
+% Heavily commented to to fit even LaTeX beginners (hopefully).
+%
+% See the `README.md` file for more info.
+%
+% This file is licensed under the CC-NC-ND Creative Commons license.
+%
+
+
+% Start a document with the here given default font size and paper size.
+\documentclass[10pt,a4paper]{article}
+
+% Set the page margins.
+\usepackage[a4paper,margin=0.75in]{geometry}
+
+% Setup the language.
+\usepackage[english]{babel}
+\hyphenation{Some-long-word}
+
+% Makes resume-specific commands available.
+\usepackage{resume}
+
+
+
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+
+% title on top of the document
+\maintitle{John Verghese}{September 1, 1994}{Last update on \today}
+
+\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+\noindent\href{mailto:john1.verghese@gmail.com}{john1.verghese\mbox{}@\mbox{}gmail.com}\sbull
+\textsmaller{+}2022978344\sbull
+
+\href{http://www.linkedin.com/in/ciesbreijs}{www.linkedin.com/in/ciesbreijs}
+\\
+Mathenesserplein 84\sbull
+3022\thinspace {\large \sc ld}\sbull
+Rotterdam\sbull
+The Netherlands
+
+\spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing
+before and after
+
+
+
+
+\spacedhrule{0em}{-0.4em}
+
+\roottitle{Experience}
+
+\headedsection
+  {\href{http://truetopiaproject.org}{Bank of America-ETT}}
+  {\href{http://truetopiaproject.org}{truetopiaproject.org}} {%
+  \headedsubsection
+    {Initiator}
+    {Nov \apo07 -- Apr \apo10}
+    {\bodytext{The Truetopia Project is an open source web application (Rails)
+to facilitate self-governing communities.  It provides a workflow for
+collaborative problem identification and solution design.}}
+}
+
+
+\headedsection
+  {\href{http://www.commuun.nl}{Commuun}}
+  {\textsc{Rotterdam, The Netherlands}} {%
+  \headedsubsection
+    {Senior Visionary}
+    {Jul \apo06 -- Sep \apo09}
+    {\bodytext{Set up the technical infrastructure, defined the core competences
+and created a brand together with Peter Duijnstee (the proprietor of Commuun).
+Then collaborated on several web applications (all Rails apps) within the
+context of his company.}}
+}
+
+\headedsection
+  {\href{http://www.eur.nl}{Erasmus University Rotterdam}}
+  {\textsc{Rotterdam, The Netherlands}} {%
+  \headedsubsection
+    {Guest Lecturer}
+    {Jul \apo06 -- Jul \apo09}
+    {\bodytext{Conducted a guest lecture on the phenomenon of open source, as
+part of the first year curriculum of \emph{Computer Science \& Economics}.}}
+}
+
+%\headedsection
+%  {LIP Automatisering}
+%  {\textsc{Breda, The Netherlands}} {%
+%  \headedsubsection
+%    {Software Auditor}
+%    {Sep \apo06}
+%    {\bodytext{Audited their flag ship product \emph{\acr{LIP} Suite}:\ an
+%    %\acr{ERP} solution for construction companies.}}
+%}
+
+\headedsection
+  {\href{http://www.thehealthagency.com}{The Health Agency}}
+  {\textsc{Delft \& Rotterdam, The Netherlands}} {%
+
+  \headedsubsection
+    {Software Engineer}
+    {Jun \apo05 -- Feb \apo06}
+    {\bodytext{Worked on their CMS (written in Python and uses Postgre\acr{SQL},
+\acr{XML}/\acr{XSLT} and Twisted).}}
+
+  \headedsubsection
+    {Software Auditor}
+    {Dec \apo06}
+    {\bodytext{Assessed their Python/Zope/\acr{Z}o\acr{DB}-based web framework
+re-engineering project.}}
+}
+
+\vspace{-0.2em}
+\begin{center}
+  \emph{\small Please refer to my
+\href{http://www.linkedin.com/in/ciesbreijs}{Linked-in profile} for a more
+complete list of work experiences along with recommendations.}
+\end{center}
+
+
+\spacedhrule{-0.2em}{-0.4em}
+
+\roottitle{Education}
+
+\headedsection
+  {\href{http://www.eur.nl/english}{Erasmus University Rotterdam}}
+  {\textsc{Rotterdam, The Netherlands}} {%
+  \headedsubsection
+    {Bachelor degree in Computer Science \& Economics}
+    {2004 -- 2007}
+    {\bodytext{Focused on the economics of open source, rapid application
+development (\acr{RAD}) and the semantic web technology stack
+(\acr{RDF}/\acr{RDFS}, \acr{OWL} and \acr{SPARQL}).  Picked up quite some Java
+skills along the way.}}
+}
+
+\headedsection
+  {\href{http://www.tudelft.nl/en}{Technical University Delft}}
+  {\textsc{Delft, The Netherlands}} {%
+  \headedsubsection
+    {Industrial Design Engineering \textnormal{\textit{~(discontinued)}}}
+    {2001 -- 2002} {}
+}
+
+\headedsection
+  {\href{http://www.libanonlyceum.nl}{Libanon Lyceum}}
+  {\textsc{Rotterdam, The Netherlands}} {%
+  \headedsubsection
+    {\acr{VWO} \textnormal{~(pre-university secondary education)}}
+    {1994 -- 2000} {}
+}
+
+
+\spacedhrule{0.5em}{-0.4em}
+
+\roottitle{Skills}
+
+\inlineheadsection  % special section that has an inline header with a 'hanging'
+paragraph
+  {Technical expertise:}
+  {Software design and implementation, with(in) a team.  Big fan of Agile
+methodologies (Scrum and Kanban), automated deployment (Capistrano) and
+continuous integration (Hudson/Jenkins).  Enjoys writing Ruby/\nsp Python/\nsp
+Java/\nsp \CPP, yet flirts regularly with Haskell.  Solid knowledge of web
+technologies:\ \acr{HTML+CSS}, \acr{XML}, \acr{RDF}, \acr{REST}, \acr{SOAP} and
+JavaScript (mostly Angular and jQuery).  Linux administration skills:\ Bash,
+Apache, My\acr{SQL}, Postgres\acr{SQL}, virtualization/cloud (Vagrant,
+Open\acr{VZ}, \acr{VM}ware, \acr{KVM}, Xen and \acr{EC}2), datacenter automation
+(Puppet and Chef).}
+
+\vspace{0.5em}
+\inlineheadsection
+  {Natural languages:}
+  {Dutch \emph{(mother tongue)}, English \emph{(full professional proficiency)},
+German \emph{(limited working proficiency)}, French \emph{(elementary
+proficiency)} and Mandarin Chinese \emph{(beginner)}.}
+
+
+\spacedhrule{1.6em}{-0.4em}
+
+\roottitle{Interests}
+
+\inlineheadsection
+  {Non-exhaustive and in alphabetical order:}
+  {art, Buddhism, cryptography, Go (board game), history, music, open source,
+philosophy, software engineering (methodologies), travel, typography (e.g.\
+graphic design, \LaTeX), \acr{UI}/\acr{UX}-design and vegetarian/vegan cooking.}
+
+
+\end{document}
+
+＀
+
