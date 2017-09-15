@@ -1,4 +1,5 @@
-%
+% NOTE: compiling from command line doesn't seem to work. ShareLatex is good.
+
 % LaTeX source of my resume
 % =========================
 %
@@ -23,15 +24,14 @@
 % Makes resume-specific commands available.
 \usepackage{resume}
 
-
-
-
-\begin{document}  % begin the content of the document
-\sloppy  % this to relax whitespacing in favour of straight margins
+% begin the content of the document
+\begin{document}  
+% this to relax whitespacing in favour of straight margins
+\sloppy  
 
 
 % title on top of the document
-\maintitle{John Verghese}{September 1, 1994}{Last update on \today}
+\maintitle{John Verghese}{Last update on \today}
 
 \nobreakvspace{0.3em}  % add some page break averse vertical spacing
 
@@ -43,10 +43,10 @@
 \noindent\href{mailto:john1.verghese@gmail.com}{john1.verghese\mbox{}@\mbox{}gmail.com}\sbull
 (202) 297-8344\sbull
 
-\href{http://www.linkedin.com/in/ciesbreijs}{https://www.linkedin.com/in/john-verghese-49879489/}
+    \href{https://github.com/johnverghese}{https://github.com/johnverghese}
 \\
-330 E 117th St\sbull
-New York\thinspace \sbull
+29 Spencer Place, 3R\sbull
+Brooklyn\thinspace \sbull
 NY\sbull
 United States
 
@@ -127,11 +127,7 @@ Service}}
     {Feb \apo 14 -- Aug \apo16}
     {\bodytext{
     \bull administered emergency medical care in a high stress environment \\*
-    \bull served on call 12-36 hours per week for Columbia’s student-run, 24/7
-ambulance service  \\*
-    \bull led teams of 3 or 4 to provide high-quality care to community members
-free of charge  \\*
-    \bull drove ambulance with lights and sirens on New York City streets  \\*
+    \bull led teams of 3 or 4 to provide free high-quality care to 27k community members\\*
     \bull trained new members in medical techniques, ambulance driving, and
 organization protocols}}
 
@@ -167,8 +163,7 @@ organization protocols}}
 
 \roottitle{Skills}
 
-\inlineheadsection  % special section that has an inline header with a 'hanging'
-paragraph
+\inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
   {Technical expertise:}
   {C (Linux kernel), Python (Django, Flask, Jinja2), Perl (SOAP::Lite), Java
 (tutored CS fundamentals in Java). Front-end development. Development tools in
@@ -178,7 +173,7 @@ UNIX environment (git, inline Perl, standard UNIX utilities).}
 \inlineheadsection
   {Natural languages:}
   {English, Mandarin Chinese \emph{(proficient)}, Spanish \emph{(beginner)},
-Hindi \emph{(beginner)}}}.}
+Hindi \emph{(beginner)}}
 
 
 \spacedhrule{1.6em}{-0.4em}
